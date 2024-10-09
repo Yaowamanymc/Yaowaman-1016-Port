@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif; /* ฟอนต์เรียบง่ายและทันสมัย */
+    background: linear-gradient(135deg, #aeb4ff, #c3cfe2); /* พื้นหลังเป็นเกรเดียนต์ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #ffffff; /* สีพื้นหลังของฟอร์ม */
+    padding: 30px; /* ระยะห่างภายใน */
+    border-radius: 15px; /* มุมโค้งนุ่มนวล */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* เงาเพื่อให้ดูมีมิติ */
+    display: flex; /* ใช้ flex เพื่อจัดเรียงแนวนอน */
+    gap: 20px; /* ระยะห่างระหว่างองค์ประกอบ */
+    align-items: center; /* จัดตำแหน่งแนวตั้งให้ตรงกลาง */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    padding: 10px; /* ระยะห่างภายใน */
+    border: 2px solid #4CAF50; /* ขอบสีเขียว */
+    border-radius: 10px; /* มุมโค้ง */
+    font-size: 1em;
+    width: 180px; /* กำหนดความกว้างของช่องกรอก */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์เปลี่ยนสีขอบและเงา */
+    margin-top: 5px; /* เพิ่มระยะห่างด้านบนระหว่างกล่องข้อความกับปุ่ม */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    border-color: #ff9800; /* เปลี่ยนสีขอบเมื่อโฟกัสเป็นสีส้ม */
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5); /* เพิ่มเงาเมื่อโฟกัส */
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px; /* มุมโค้ง */
+    background-color: #2196F3; /* สีพื้นหลังปุ่มเป็นสีฟ้า */
+    color: #ffffff; /* สีตัวอักษร */
+    font-weight: 700; /* ตัวหนา */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เอฟเฟกต์เปลี่ยนสีปุ่มและขนาด */
+    margin-top: 5px; /* เพิ่มระยะห่างด้านบนระหว่างกล่องข้อความกับปุ่ม */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #1976D2; /* สีเมื่อชี้เมาส์ไปที่ปุ่ม */
+    transform: scale(1.05); /* ขยายขนาดปุ่มเมื่อชี้เมาส์ */
+}

@@ -1,0 +1,121 @@
+h1{
+    background-color:rgb(189, 41, 41);
+    color: rgb(253, 211, 24);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+h3{
+    background-color:rgb(189, 41, 41);
+    color: rgb(253, 211, 24);
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+.image-header {
+    width: 20%; 
+    border-radius: 10px;
+}
+
+
+.grid-container {
+	display: grid;
+    grid-template-columns: 15% auto auto;
+    grid-gap: 10px;
+	justify-content: center;
+	
+}
+
+.grid-container > div{
+    border: 10px solid rgb(40, 83, 50);
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(189, 41, 41);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.image-pizza1 { 
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+#header{
+	grid-column: 1 / span 3;
+	
+}
+
+#main1{
+	grid-column: 1 / span 1;
+}
+
+#right{
+	grid-column: 2 / span 1;
+}
+
+#pizza1{
+	grid-column: 3 / span 1;
+	
+}
+
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto ;
+        grid-gap: 10px;  
+	}
+
+	#header{
+		grid-column: 1 / span 2;
+	}
+	#main1{
+		grid-column: 1 / span 2;
+	}
+	#right{
+		grid-column: 1 / span 2;
+	}
+	#pizza1{
+		grid-column: 1 / span 2;
+	}
+	#footer{
+		grid-column: 1 / span 2;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+	}
+	#header{
+		grid-column: 1 / span 1;
+	}
+	#main1{
+		grid-column: 1 / span 1;
+	}
+	#footer{
+		grid-column: 1 / span 1;
+	}
+	#right{
+		grid-column: 1 / span 1;
+	}
+	#pizza1{
+		grid-column: 1 / span 1;
+	}
+}
+
+

@@ -1,0 +1,82 @@
+h1{
+    background-color: rgb(255, 229, 191);
+    color: rgb(102, 69, 54);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 1rem;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+img{
+    width:300px;
+    border-radius: 10px;
+}
+
+.Cinnamon > div{
+    border: 5px solid rgb(228, 159, 207);
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    text-align: center;
+    border-radius: 10px;
+}
+.Cinnamon{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+
+h3{
+    background-color: rgb(253, 228, 85);
+    color: rgb(93, 105, 172);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 1rem;
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+}
+
+.Ingredients > div{
+    border: 5px solid rgb(228, 159, 207);
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.Ingredients{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+
+.Step{
+    display:flex;
+    width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.main{
+    margin-left: 10px;
+}
+
+body{
+    background-image: url(pic/bb.jpg);
+}
+
+.Step img{
+    width: 200px;
+}
